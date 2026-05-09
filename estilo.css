@@ -1,0 +1,73 @@
+ground-position: 0% 50%;
+    backdrop-filter: blur(10px);
+}
+
+.stat-box h3 {
+    font-size: 3rem;
+    color: #38bdf8;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px;
+}
+
+.player-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+}
+
+.player-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.player-card h2 {
+    padding: 20px;
+}
+
+.player-card p {
+    padding: 0 20px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:768px) {
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .gallery {
+        padding: 20px;
+    }
+
+    .player-grid {
+        padding: 20px;
+    }
+
+}
